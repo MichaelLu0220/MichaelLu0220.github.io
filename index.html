@@ -11,7 +11,7 @@
         name="viewport"
         content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
     />
-    <link rel="icon" href="/images/avatar.jpg" />
+    <link rel="icon" href="/images/output_big.ico" />
     <link rel="preconnect" href="https://s4.zstatic.net" />
 <script src="https://s4.zstatic.net/ajax/libs/vue/3.3.7/vue.global.prod.min.js"></script>
 <link rel="stylesheet" href="https://s4.zstatic.net/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
@@ -53,7 +53,7 @@
             <div id="loading" v-show="loading">
                 <div id="loading-circle">
                     <h2>LOADING</h2>
-                    <p>加载过慢请开启缓存 浏览器默认开启</p>
+                    <p>加載過久請該起緩存 瀏覽器默認開啟囉</p>
                     <img src="/images/Animation%20-%20loading.gif" />
                 </div>
             </div>
@@ -153,9 +153,11 @@
 
         <div id="main" :class="loading ? 'into-enter-from': 'into-enter-active'">
             <div id="home-head">
-    <div id="home-background" ref="homeBackground" data-images="/images/background0.jpg,/images/background1.jpg,/images/background2.jpg,/images/background3.jpg,/images/background4.jpg,/images/background5.jpg,/images/background6.jpg,/images/background7.jpg"
-        style="background-image: url('/images/background5.jpg');">
-    </div>
+    <div
+        id="home-background"
+        ref="homeBackground"
+        data-images="/images/background0.jpg,/images/background1.jpg,/images/background2.jpg,/images/background3.jpg,/images/background4.jpg,/images/background5.jpg,/images/background6.jpg,/images/background7.jpg"
+    ></div>
     <div id="home-info" @click="homeClick">
         <span class="loop"></span>
         <span class="loop"></span>
@@ -163,21 +165,18 @@
         <span class="loop"></span>
         <span class="info">
             <div class="wrap">
-                <h1>
-                    Michael&#39;s blog
-                </h1>
-                <h3>
-                    Welcome home!
-                </h3>
-                <h5>
-                    
-                </h5>
+                <h1>Michael&#39;s blog</h1>
+                <h3>Welcome home!</h3>
+                <h5></h5>
             </div>
         </span>
     </div>
 </div>
-<div id="home-posts-wrap" ref="homePostsWrap" true
-    >
+<div
+    id="home-posts-wrap"
+    ref="homePostsWrap"
+    true
+>
     <div id="home-posts">
         
 
@@ -221,7 +220,7 @@
         
         
     </div>
-    <a href="/2024/10/18/Introduce/" class="go-post">阅读全文</a>
+    <a href="/2024/10/18/Introduce/" class="go-post">閱讀全文</a>
 </div>
 
 <div class="post">
@@ -264,11 +263,11 @@
         
         
     </div>
-    <a href="/2024/10/17/hello-world/" class="go-post">阅读全文</a>
+    <a href="/2024/10/17/hello-world/" class="go-post">閱讀全文</a>
 </div>
 
 
-            <div class="page-current">
+        <div class="page-current">
     
     <span class="current">1</span>
     
@@ -279,11 +278,11 @@
 
     </div>
     
-        <div id="home-card">
-            <div id="card-style">
+    <div id="home-card">
+        <div id="card-style">
     <div id="card-div">
         <div class="avatar">
-            <img src="/images/avatar.jpg" alt="avatar" />
+            <img src="/images/cat.jpg" alt="avatar" />
         </div>
         <div class="name">Michael Lu</div>
         <div class="description">
@@ -295,7 +294,7 @@
         <div class="friend-links">
             
             <div class="friend-link">
-                <a target="_blank" rel="noopener" href="https://argvchs.github.io">Argvchs</a>
+                <a target="_blank" rel="noopener" href="https://github.com/MichaelLu0220">Github</a>
             </div>
             
         </div>
@@ -303,14 +302,15 @@
     </div>
 </div>
 
-        </div>
-        
+    </div>
+    
 </div>
+
             <footer id="footer">
     <div id="footer-wrap">
         <div>
             &copy;
-            2022 - 2024 Michael&#39;s blog
+            2022 - 2025 Michael&#39;s blog
             <span id="footer-icon">
                 <i class="fa-solid fa-font-awesome fa-fw"></i>
             </span>
