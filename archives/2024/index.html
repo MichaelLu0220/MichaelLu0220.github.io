@@ -1,13 +1,22 @@
 
 <!DOCTYPE html>
-<html lang="zh_TW">
+<html lang="zh-TW">
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EKR9SRFDZF"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-EKR9SRFDZF');
+    </script>
     <meta charset="utf-8" />
     <meta name="google-site-verification" content="NFjQbudDaVseoB_Ma2jajo6Ro7OK26qRGgEEYmp0FM4" />
-    <title>Archives | Michael&#39;s blog</title>
+    <title>Archives | GuaGua&#39;s blog</title>
     <meta name="author" content="Michael Lu" />
     <meta name="description" content="" />
-    <meta name="keywords" content="" />
+    <meta name="keywords" content="技術,程式,生活,學習" />
     <meta
         name="viewport"
         content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
@@ -45,6 +54,7 @@
 
 <link rel="stylesheet" href="/css/main.css" />
 
+    <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 <meta name="generator" content="Hexo 7.3.0"></head>
 <body>
     <div id="layout">
@@ -60,7 +70,7 @@
         <div id="menu" :class="{ hidden: hiddenMenu, 'menu-color': menuColor}">
     <nav id="desktop-menu">
         <a class="title" href="/">
-            <span>MICHAEL&#39;S BLOG</span>
+            <span>GUAGUA&#39;S BLOG</span>
         </a>
         
         <a href="/">
@@ -92,7 +102,7 @@
     <nav id="mobile-menu">
         <div class="title" @click="showMenuItems = !showMenuItems">
             <i class="fa-solid fa-bars fa-fw"></i>
-            <span>&emsp;MICHAEL&#39;S BLOG</span>
+            <span>&emsp;GUAGUA&#39;S BLOG</span>
         </div>
         <transition name="slide">
             <div class="items" v-show="showMenuItems">
@@ -156,29 +166,53 @@
     
     <div id="timeline-wrap" ref="timeline">
         
-        <div class="timeline" data-title="helloworld">
-            <div class="timeline-tail"></div>
-            <div class="timeline-content">
-                <div class="item-time">2024/10/17</div>
-                <a href="/2024/10/17/hello-world/">
-                    <h3>Hello World</h3>
-                </a>
-                <div class="info">
-                    
-                    
-                </div>
-            </div>
-        </div>
-        
-        <div class="timeline" data-title="introduce">
+        <div class="timeline" data-title="welcometomyblog!">
             <div class="timeline-tail"></div>
             <div class="timeline-content">
                 <div class="item-time">2024/10/18</div>
-                <a href="/2024/10/18/Introduce/">
-                    <h3>Introduce</h3>
+                <a href="/about/">
+                    <h3>Welcome to My Blog!</h3>
                 </a>
                 <div class="info">
                     
+                    <span class="category">
+                        <a href="/categories/%E7%94%9F%E6%B4%BB/">
+                            <span class="icon">
+                                <i class="fa-solid fa-bookmark fa-fw"></i>
+                            </span>
+                            生活
+                        </a>
+                    </span>
+                    
+                    
+                    <span class="tags">
+                        <span class="icon">
+                            <i class="fa-solid fa-tags fa-fw"></i>
+                        </span>
+                        
+                        
+                        <span class="tag">
+                            
+                            <a href="/tags/tech/" style="color: #ffa2c4">
+                                tech
+                            </a>
+                        </span>
+                        
+                        <span class="tag">
+                            
+                            <a href="/tags/blog/" style="color: #00a596">
+                                blog
+                            </a>
+                        </span>
+                        
+                        <span class="tag">
+                            
+                            <a href="/tags/life/" style="color: #03a9f4">
+                                life
+                            </a>
+                        </span>
+                        
+                    </span>
                     
                 </div>
             </div>
@@ -191,7 +225,7 @@
     <div id="footer-wrap">
         <div>
             &copy;
-            2022 - 2025 Michael&#39;s blog
+            2022 - 2025 GuaGua&#39;s blog
             <span id="footer-icon">
                 <i class="fa-solid fa-font-awesome fa-fw"></i>
             </span>
@@ -200,6 +234,10 @@
         <div>
             Based on the <a target="_blank" rel="noopener" href="https://hexo.io">Hexo Engine</a> &amp;
             <a target="_blank" rel="noopener" href="https://github.com/theme-particlex/hexo-theme-particlex">ParticleX Theme</a>
+        </div>
+        <div class="post-views">
+            網站瀏覽次數：
+            <span id="busuanzi_value_page_pv"></span> 次
         </div>
         
     </div>
