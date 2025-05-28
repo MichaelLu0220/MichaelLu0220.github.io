@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html lang="zh-TW,en,zh-CN,default">
+<html lang="en">
 <head>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-EKR9SRFDZF"></script>
@@ -13,10 +13,10 @@
     </script>
     <meta charset="utf-8" />
     <meta name="google-site-verification" content="NFjQbudDaVseoB_Ma2jajo6Ro7OK26qRGgEEYmp0FM4" />
-    <title>歡迎來到呱呱的部落格！ | GuaGua&#39;s blog</title>
+    <title>Welcome to My Blog! | GuaGua&#39;s blog</title>
     <meta name="author" content="Michael Lu" />
     <meta name="description" content="" />
-    <meta name="keywords" content="技術,程式,生活,學習" />
+    <meta name="keywords" content="tech,code,life,study" />
     <meta
         name="viewport"
         content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
@@ -53,10 +53,6 @@
 
 
 
-<script src="https://s4.zstatic.net/ajax/libs/waline/2.15.8/waline.min.js"></script>
-<link rel="stylesheet" href="https://s4.zstatic.net/ajax/libs/waline/2.15.8/waline.min.css" />
-<link rel="stylesheet" href="https://s4.zstatic.net/ajax/libs/waline/2.15.8/waline-meta.min.css" />
-
 
 
 
@@ -70,7 +66,7 @@
             <div id="loading" v-show="loading">
                 <div id="loading-circle">
                     <h2>LOADING</h2>
-                    <p>加載過久請該起緩存 瀏覽器默認開啟囉</p>
+                    <p>Page taking too long? Caching might help — it's usually enabled by default.</p>
                     <img src="/images/Animation%20-%20loading.gif" />
                 </div>
             </div>
@@ -82,13 +78,28 @@
         </a>
         
         <a href="/">
-            <i class="fa- fa- fa-fw"></i>
-            <span>&ensp;zh-TW</span>
+            <i class="fa-solid fa-house fa-fw"></i>
+            <span>&ensp;Home</span>
         </a>
         
-        <a href="/">
-            <i class="fa- fa- fa-fw"></i>
-            <span>&ensp;en</span>
+        <a href="/about">
+            <i class="fa-solid fa-id-card fa-fw"></i>
+            <span>&ensp;About</span>
+        </a>
+        
+        <a href="/archives">
+            <i class="fa-solid fa-box-archive fa-fw"></i>
+            <span>&ensp;Archives</span>
+        </a>
+        
+        <a href="/categories">
+            <i class="fa-solid fa-bookmark fa-fw"></i>
+            <span>&ensp;Categories</span>
+        </a>
+        
+        <a href="/tags">
+            <i class="fa-solid fa-tags fa-fw"></i>
+            <span>&ensp;Tags</span>
         </a>
         
     </nav>
@@ -103,18 +114,45 @@
                 <a href="/">
                     <div class="item">
                         <div style="min-width: 20px; max-width: 50px; width: 10%">
-                            <i class="fa- fa- fa-fw"></i>
+                            <i class="fa-solid fa-house fa-fw"></i>
                         </div>
-                        <div style="min-width: 100px; max-width: 150%; width: 20%">zh-TW</div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">Home</div>
                     </div>
                 </a>
                 
-                <a href="/">
+                <a href="/about">
                     <div class="item">
                         <div style="min-width: 20px; max-width: 50px; width: 10%">
-                            <i class="fa- fa- fa-fw"></i>
+                            <i class="fa-solid fa-id-card fa-fw"></i>
                         </div>
-                        <div style="min-width: 100px; max-width: 150%; width: 20%">en</div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">About</div>
+                    </div>
+                </a>
+                
+                <a href="/archives">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-box-archive fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">Archives</div>
+                    </div>
+                </a>
+                
+                <a href="/categories">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-bookmark fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">Categories</div>
+                    </div>
+                </a>
+                
+                <a href="/tags">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-tags fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">Tags</div>
                     </div>
                 </a>
                 
@@ -129,7 +167,7 @@
         <div id="main" :class="loading ? 'into-enter-from': 'into-enter-active'">
             <div class="article">
     <div>
-        <h1>歡迎來到呱呱的部落格！</h1>
+        <h1>Welcome to My Blog!</h1>
     </div>
     <div class="info">
         <span class="date">
@@ -140,11 +178,11 @@
         </span>
         
         <span class="category">
-            <a href="/categories/%E7%94%9F%E6%B4%BB/">
+            <a href="/categories/Others/">
                 <span class="icon">
                     <i class="fa-solid fa-bookmark fa-fw"></i>
                 </span>
-                生活
+                Others
             </a>
         </span>
         
@@ -157,8 +195,15 @@
             
             <span class="tag">
                 
-                <a href="/tags/%E7%A7%91%E6%8A%80%E3%80%81%E9%83%A8%E8%90%BD%E6%A0%BC%E3%80%81%E7%94%9F%E6%B4%BB/" style="color: #ffa2c4">
-                    科技、部落格、生活
+                <a href="/tags/tech/" style="color: #00bcd4">
+                    tech
+                </a>
+            </span>
+            
+            <span class="tag">
+                
+                <a href="/tags/life/" style="color: #ff7d73">
+                    life
                 </a>
             </span>
             
@@ -167,19 +212,18 @@
     </div>
     
     <div class="content" v-pre>
-        <p>嗨嗨！👋 很開心你來到這裡～<br>這是我呱呱的個人部落格，一個記錄旅程、分享想法的小角落。從科技和寫程式，到生活瑣事和突發奇想，這裡什麼都聊一點。無論你是來學東西、找靈感，還是單純想放空一下，希望這裡都能讓你會心一笑 😊</p>
-<h2 id="你會在這裡看到什麼？"><a href="#你會在這裡看到什麼？" class="headerlink" title="你會在這裡看到什麼？"></a>你會在這裡看到什麼？</h2><ul>
-<li><strong>科技觀察室 🔧</strong>: 熱愛鑽研技術，分享實用工具和寫程式的心得小撇步。</li>
-<li><strong>生活實驗室 🧪</strong>: 我的日常冒險、生活體悟，還有那些藏在日常裡的溫柔時刻。</li>
-<li>*<em>歡樂小角落 🎉</em>: 偶爾耍耍廢，來點輕鬆有趣的內容，讓腦袋放個假～</li>
+        <p>Hello there! ? I’m excited to share my journey, experiences, and thoughts with you all. This blog is a space where I explore topics that interest me, from technology and coding to everyday life moments. Whether you’re here to learn something new, get inspired, or just relax, I hope you’ll find something that resonates with you.</p>
+<h2 id="What-You-Can-Expect"><a href="#What-You-Can-Expect" class="headerlink" title="What You Can Expect"></a>What You Can Expect</h2><ul>
+<li><strong>Tech Insights</strong>: I love diving into the world of technology, coding tips, and tools that make life easier.</li>
+<li><strong>Personal Experiences</strong>: Sharing my daily life adventures, lessons learned, and reflections on the things that matter to me.</li>
+<li><strong>Fun Stuff</strong>: Sometimes, it’s nice to just enjoy the lighter side of life, and you’ll see that here too!</li>
 </ul>
-<p>請鎖定頻道（誤 😆），未來還有更多內容等你來看！<br>如果你有什麼想法或想聊聊，隨時歡迎來搭訕（欸）。</p>
-<p>一起在這裡學習、成長，也別忘了享受生活的美好！</p>
+<p>Stay tuned for more content, and don’t hesitate to reach out if you want to connect. Let’s make this a place to learn, grow, and share together! ?</p>
 <hr>
-<p><em>感謝你的來訪，祝你閱讀愉快！</em></p>
-<p><em>我們下次見～ 👋</em></p>
+<p><em>Thanks for visiting, and happy reading!</em></p>
+<p><em>See you !</em></p>
 <div style="text-align: left; margin: 20px 0;"> 
-    <img src="/zh-TW/about/giphy.gif" alt="Welcome GIF" width="500" style="border: 2px solid #ccc;">
+    <img src="/about/giphy.gif" alt="Welcome GIF" width="500" style="border: 2px solid #ccc;">
 </div>
 
     </div>
@@ -187,10 +231,6 @@
     
     
     
-    
-    <div id="comment">
-        <div id="waline-container"></div>
-    </div>
     
     
     
@@ -211,7 +251,7 @@
             <a target="_blank" rel="noopener" href="https://github.com/theme-particlex/hexo-theme-particlex">ParticleX Theme</a>
         </div>
         <div class="post-views">
-            網站瀏覽次數：
+            Website Views：
             <span id="busuanzi_value_page_pv"></span> 次
         </div>
         
@@ -231,23 +271,6 @@
     
     
 
-
-<script>
-    Waline.init({
-        el: "#waline-container",
-        serverURL: "",
-        commentCount: true,
-        pageview: false,
-        emoji: "https://unpkg.com/@waline/emojis@1.2.0/weibo,https://unpkg.com/@waline/emojis@1.2.0/alus,https://unpkg.com/@waline/emojis@1.2.0/bilibili,https://unpkg.com/@waline/emojis@1.2.0/qq,https://unpkg.com/@waline/emojis@1.2.0/tieba,https://unpkg.com/@waline/emojis@1.2.0/tw-emoji".split(","),
-        meta: "nick,mail,link".split(","),
-        requiredMeta: "nick".split(","),
-        lang: "zh-TW",
-        wordLimit: 0,
-        pageSize: "10",
-        login: "enable",
-        
-    });
-</script>
 
 
 

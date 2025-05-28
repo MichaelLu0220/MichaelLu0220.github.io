@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html lang="zh-TW,en,zh-CN,default">
+<html lang="en">
 <head>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-EKR9SRFDZF"></script>
@@ -16,7 +16,7 @@
     <title>Categories | GuaGua&#39;s blog</title>
     <meta name="author" content="Michael Lu" />
     <meta name="description" content="" />
-    <meta name="keywords" content="技術,程式,生活,學習" />
+    <meta name="keywords" content="tech,code,life,study" />
     <meta
         name="viewport"
         content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
@@ -62,7 +62,7 @@
             <div id="loading" v-show="loading">
                 <div id="loading-circle">
                     <h2>LOADING</h2>
-                    <p>加載過久請該起緩存 瀏覽器默認開啟囉</p>
+                    <p>Page taking too long? Caching might help — it's usually enabled by default.</p>
                     <img src="/images/Animation%20-%20loading.gif" />
                 </div>
             </div>
@@ -74,13 +74,28 @@
         </a>
         
         <a href="/">
-            <i class="fa- fa- fa-fw"></i>
-            <span>&ensp;zh-TW</span>
+            <i class="fa-solid fa-house fa-fw"></i>
+            <span>&ensp;Home</span>
         </a>
         
-        <a href="/">
-            <i class="fa- fa- fa-fw"></i>
-            <span>&ensp;en</span>
+        <a href="/about">
+            <i class="fa-solid fa-id-card fa-fw"></i>
+            <span>&ensp;About</span>
+        </a>
+        
+        <a href="/archives">
+            <i class="fa-solid fa-box-archive fa-fw"></i>
+            <span>&ensp;Archives</span>
+        </a>
+        
+        <a href="/categories">
+            <i class="fa-solid fa-bookmark fa-fw"></i>
+            <span>&ensp;Categories</span>
+        </a>
+        
+        <a href="/tags">
+            <i class="fa-solid fa-tags fa-fw"></i>
+            <span>&ensp;Tags</span>
         </a>
         
     </nav>
@@ -95,18 +110,45 @@
                 <a href="/">
                     <div class="item">
                         <div style="min-width: 20px; max-width: 50px; width: 10%">
-                            <i class="fa- fa- fa-fw"></i>
+                            <i class="fa-solid fa-house fa-fw"></i>
                         </div>
-                        <div style="min-width: 100px; max-width: 150%; width: 20%">zh-TW</div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">Home</div>
                     </div>
                 </a>
                 
-                <a href="/">
+                <a href="/about">
                     <div class="item">
                         <div style="min-width: 20px; max-width: 50px; width: 10%">
-                            <i class="fa- fa- fa-fw"></i>
+                            <i class="fa-solid fa-id-card fa-fw"></i>
                         </div>
-                        <div style="min-width: 100px; max-width: 150%; width: 20%">en</div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">About</div>
+                    </div>
+                </a>
+                
+                <a href="/archives">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-box-archive fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">Archives</div>
+                    </div>
+                </a>
+                
+                <a href="/categories">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-bookmark fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">Categories</div>
+                    </div>
+                </a>
+                
+                <a href="/tags">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-tags fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">Tags</div>
                     </div>
                 </a>
                 
@@ -126,11 +168,11 @@
         
         
         <span>
-            <a href="/categories/%E7%94%9F%E6%B4%BB/" style="background: #00bcd4">
+            <a href="/categories/Others/" style="background: #ff7d73">
                 <span class="icon">
                     <i class="fa-solid fa-bookmark fa-fw"></i>
                 </span>
-                生活
+                Others
             </a>
         </span>
         
@@ -154,7 +196,7 @@
             <a target="_blank" rel="noopener" href="https://github.com/theme-particlex/hexo-theme-particlex">ParticleX Theme</a>
         </div>
         <div class="post-views">
-            網站瀏覽次數：
+            Website Views：
             <span id="busuanzi_value_page_pv"></span> 次
         </div>
         
