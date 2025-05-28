@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html lang="zh-TW">
+<html lang="zh-TW,en,zh-CN,default">
 <head>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-EKR9SRFDZF"></script>
@@ -53,6 +53,10 @@
 
 
 
+<script src="https://s4.zstatic.net/ajax/libs/waline/2.15.8/waline.min.js"></script>
+<link rel="stylesheet" href="https://s4.zstatic.net/ajax/libs/waline/2.15.8/waline.min.css" />
+<link rel="stylesheet" href="https://s4.zstatic.net/ajax/libs/waline/2.15.8/waline-meta.min.css" />
+
 
 
 
@@ -78,28 +82,13 @@
         </a>
         
         <a href="/">
-            <i class="fa-solid fa-house fa-fw"></i>
-            <span>&ensp;Home</span>
+            <i class="fa- fa- fa-fw"></i>
+            <span>&ensp;zh-TW</span>
         </a>
         
-        <a href="/about">
-            <i class="fa-solid fa-id-card fa-fw"></i>
-            <span>&ensp;About</span>
-        </a>
-        
-        <a href="/archives">
-            <i class="fa-solid fa-box-archive fa-fw"></i>
-            <span>&ensp;Archives</span>
-        </a>
-        
-        <a href="/categories">
-            <i class="fa-solid fa-bookmark fa-fw"></i>
-            <span>&ensp;Categories</span>
-        </a>
-        
-        <a href="/tags">
-            <i class="fa-solid fa-tags fa-fw"></i>
-            <span>&ensp;Tags</span>
+        <a href="/">
+            <i class="fa- fa- fa-fw"></i>
+            <span>&ensp;en</span>
         </a>
         
     </nav>
@@ -114,45 +103,18 @@
                 <a href="/">
                     <div class="item">
                         <div style="min-width: 20px; max-width: 50px; width: 10%">
-                            <i class="fa-solid fa-house fa-fw"></i>
+                            <i class="fa- fa- fa-fw"></i>
                         </div>
-                        <div style="min-width: 100px; max-width: 150%; width: 20%">Home</div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">zh-TW</div>
                     </div>
                 </a>
                 
-                <a href="/about">
+                <a href="/">
                     <div class="item">
                         <div style="min-width: 20px; max-width: 50px; width: 10%">
-                            <i class="fa-solid fa-id-card fa-fw"></i>
+                            <i class="fa- fa- fa-fw"></i>
                         </div>
-                        <div style="min-width: 100px; max-width: 150%; width: 20%">About</div>
-                    </div>
-                </a>
-                
-                <a href="/archives">
-                    <div class="item">
-                        <div style="min-width: 20px; max-width: 50px; width: 10%">
-                            <i class="fa-solid fa-box-archive fa-fw"></i>
-                        </div>
-                        <div style="min-width: 100px; max-width: 150%; width: 20%">Archives</div>
-                    </div>
-                </a>
-                
-                <a href="/categories">
-                    <div class="item">
-                        <div style="min-width: 20px; max-width: 50px; width: 10%">
-                            <i class="fa-solid fa-bookmark fa-fw"></i>
-                        </div>
-                        <div style="min-width: 100px; max-width: 150%; width: 20%">Categories</div>
-                    </div>
-                </a>
-                
-                <a href="/tags">
-                    <div class="item">
-                        <div style="min-width: 20px; max-width: 50px; width: 10%">
-                            <i class="fa-solid fa-tags fa-fw"></i>
-                        </div>
-                        <div style="min-width: 100px; max-width: 150%; width: 20%">Tags</div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">en</div>
                     </div>
                 </a>
                 
@@ -195,21 +157,21 @@
             
             <span class="tag">
                 
-                <a href="/tags/tech/" style="color: #ffa2c4">
+                <a href="/tags/tech/" style="color: #03a9f4">
                     tech
                 </a>
             </span>
             
             <span class="tag">
                 
-                <a href="/tags/blog/" style="color: #00bcd4">
+                <a href="/tags/blog/" style="color: #00a596">
                     blog
                 </a>
             </span>
             
             <span class="tag">
                 
-                <a href="/tags/life/" style="color: #ffa2c4">
+                <a href="/tags/life/" style="color: #ff7d73">
                     life
                 </a>
             </span>
@@ -230,7 +192,7 @@
 <p><em>Thanks for visiting, and happy reading!</em></p>
 <p><em>See you !</em></p>
 <div style="text-align: left; margin: 20px 0;"> 
-    <img src="/about/giphy.gif" alt="Welcome GIF" width="500" style="border: 2px solid #ccc;">
+    <img src="/en/about/giphy.gif" alt="Welcome GIF" width="500" style="border: 2px solid #ccc;">
 </div>
 
     </div>
@@ -238,6 +200,10 @@
     
     
     
+    
+    <div id="comment">
+        <div id="waline-container"></div>
+    </div>
     
     
     
@@ -278,6 +244,23 @@
     
     
 
+
+<script>
+    Waline.init({
+        el: "#waline-container",
+        serverURL: "",
+        commentCount: true,
+        pageview: false,
+        emoji: "https://unpkg.com/@waline/emojis@1.2.0/weibo,https://unpkg.com/@waline/emojis@1.2.0/alus,https://unpkg.com/@waline/emojis@1.2.0/bilibili,https://unpkg.com/@waline/emojis@1.2.0/qq,https://unpkg.com/@waline/emojis@1.2.0/tieba,https://unpkg.com/@waline/emojis@1.2.0/tw-emoji".split(","),
+        meta: "nick,mail,link".split(","),
+        requiredMeta: "nick".split(","),
+        lang: "zh-TW",
+        wordLimit: 0,
+        pageSize: "10",
+        login: "enable",
+        
+    });
+</script>
 
 
 
